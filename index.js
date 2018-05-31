@@ -1,10 +1,96 @@
+// Usamos a crase como aspas de acordo com as normas da airbnb
+// Fonte: https://github.com/airbnb/javascript
+// Nela podemos concatenar usando `${valorJS}`
 const cabeca = () => {
 	const naris = (alvo) => {
 		let alvoFinal = encodeURIComponent(alvo)
 		fetch(`https://www.googleapis.com/customsearch/v1?key=AIzaSyADjS6owZ90b4mK38f1GE7L-_vilprqhIQ&cx=017576662512468239146:omuauf_lfve&q=${alvoFinal}&categories=general&format=json`)
+		console.log(`%c Guilherme produções... buscando por ${alvo}`, `background: #000; color: #0f0`)
 	}
-	//let attck = [A gente vai pôr a lista aqui né?!]
+	// Nossa dork <3 OMG q delicinha!!
+	let attack = [`inurl:index.php?id= site:*gov.br`,
+		`inurl:/sis/cadastro.phpid= site:*gov.br`,
+		`inurl:index.php?id= site:*sp.gov.br`,
+		`inurl:news.php?id= site:*ba.gov.br`,
+		`inurl:oferta.php?id= site:*rj.gov.br`,
+		`inurl:governador.php?id= site:*rs.gov.br`,
+		`inurl:artigo.php?ID= site:*pr.gov.br`,
+		`inurl:/contato.php?id= site:*mg.gov.br`,
+		`inurl:/bancodedados.php?decl_id= site:*gov.br`,
+		`inurl:Pageid= site:*gov.br`,
+		`inurl:pagina.php?left= site:*pi.gov.br`,
+		`inurl:layout.php?id=120'= site:*gov.br`,
+		`inurl:principal.php?id=123'= site:*rg.gov.br`,
+		`inurl:cidadao.php?index=1 site:*gov.br`,
+		`inurl:home.php?where= site:*gov.br`,
+		`inurl:prefeitura.php?sivu= site:*.br`,
+		`inurl:/wp-admin/admin-ajax.php.php?sivu= site:*.br`,
+		`inurl:admin-ajax.php.php?id= site:*.br`,
+		`inurl:*inc*.php?adresa= site:*gov.br`,
+		`inurl:padrao.php?str= site:*gov.br`,
+		`inurl:include.php?my= site:*.gov.br`,
+		`inurl:servicos.php?home= site:*gov.br`,
+		`inurl:servicos.php?index= site:*gov.br`,
+		`inurl:index.php?lid=20= site:*gov.br`,
+		`inurl:/seguranca/login.asp?lid=20= site:*gov.br`,
+		`inurl:principal.php?id=30= site:*gov.br`,
+		`inurl:servicos.php?id=205= site:*gov.br`,
+		`inurl:informacoes.php?id=25155= site:*gov.br`,
+		`inurl:vizualizar.php?id=203= site:*gov.br`,
+		`inurl:general.php?id=50= site:*gov.br`,
+		`inurl:principal.php?id=705= site:*gov.br`,
+		`inurl:servico_visualizar.php?id=120= site:*.gov.br`,
+		`inurl:/servicos/servico_visualizar.php?id=120= site:*.gov.br`,
+		`inurl:nota.php?v= site:*gov.br`,
+		`inurl:home.shtml?str= site:*ed.gov`,
+		`inurl:home.php?str= site:*gov.br`,
+		`inurl:home.html?str= site:*gov.br`,
+		`inurl:/portal/home.shtml?str= site:*.gov.br`,
+		`inurl:principal.htm?panel= site:*gov.br`,
+		`inurl:page.php?mod= site:*gov.br`,
+		`inurl:index.html?param= site:*gov.br`,
+		`inurl:cidadao.php?texto= site:*go.br`,
+		`inurl:conteudo.php?dir= site:*gov.br`,
+		`inurl:site.asp?where= site:*gov.br`,
+		`inurl:/sis/login.php?subject= site:*gov.br`,
+		`inurl:login.php?play= site:*gov.br`,
+		`inurl:base.php?l= site:*gov.br`,
+		`com.br/php/php/produto.php?produto=`,
+		`.com.br/php/produto.php?finalizar=`,
+		`.com.br/php/produto.php?catalogid=`,
+		`.com.br/php/produto.php?id=`,
+		`.com.br/php/produto.php?fechar=`,
+		`.com.br/php/produto.php?modelo=`,
+		`.com.br/php/produto.php?forma_pagamento=`,
+		`.com.br/php/produto.php?cadastrar=`,
+		`.com.br/php/produto.php?marca=`,
+		`.com.br/php/produto.php?finalizar=`,
+		`.com.br/php/produto.php?catalogid=`,
+		`.com.br/php/produto.php?id=`,
+		`.com.br/php/produto.php?fechar=`,
+		`.com.br/php/produto.php?modelo=`,
+		`.com.br/php/produto.php?forma_pagamento=`,
+		`.com.br/php/produto.php?comprar=`,
+		`.com.br/php/produto.php?nome=`,
+		`.com.br/php/produto.php?email=`,
+		`.com.br/php/produto.php?assinar=`,
+		`.com.br/php/produto.php?carrinho=`,
+		`.com.br/php/produto.php?catalogid=`,
+		`.com.br/loja.php?evento=`,
+		`.com.br/php/pagamento/index.php?id=`,
+		`.com.br/php/moda-masculina/calcados/sapatenis.php?id=`,
+		`.com.br/php/masculino/sapatenis.php?modelo=`,
+		`.com.br/php/feminino/sapatenis.php?modelo=`,
+		`.com.br/php/moda-feminina/blusas.php?modelo=`,
+		`.com.br/php/acesso/login.php?id=`,
+		`.com.br/php/user/login.php?id=`,
+		`.com.br/php/mobile/php/login.php`,
+		`.com.br/php/usuario/login.php?id=`,
+		`.com.br/home/login.php?id=`]
 
-	//attack.map(naris)
-	// minha key da api AIzaSyADjS6owZ90b4mK38f1GE7L-_vilprqhIQ
+	// ^-^
+	attack.map(naris)
+	// Funcao nativa `map` 
+
+	// minha key da api do Google search AIzaSyADjS6owZ90b4mK38f1GE7L-_vilprqhIQ
 }
