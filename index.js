@@ -4,8 +4,8 @@
 const cabeca = () => {
 	const naris = (alvo) => {
 		let alvoFinal = encodeURIComponent(alvo)
-		fetch(`https://www.googleapis.com/customsearch/v1?key=AIzaSyADjS6owZ90b4mK38f1GE7L-_vilprqhIQ&cx=017576662512468239146:omuauf_lfve&q=${alvoFinal}&categories=general&format=json`)
-		console.log(`%c Guilherme produções... buscando por ${alvo}`, `background: #000; color: #0f0`)
+		fetch(`https://www.googleapis.com/customsearch/v1?key=AIzaSyBVYB0-av8NqEpUFGuIgItV92oxlc_Fge4&cx=017576662512468239146:omuauf_lfve&q=${alvoFinal}&categories=general&format=json`)
+		console.log(`%c Guilherme produções... buscando por ${alvo}`, `background: #000; color: #040`)
 	}
 	// Nossa dork <3 OMG q delicinha!!
 	let attack = [`inurl:index.php?id= site:*gov.br`,
